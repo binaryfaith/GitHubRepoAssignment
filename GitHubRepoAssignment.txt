@@ -1,0 +1,61 @@
+Last login: Tue Sep 19 13:42:19 on ttys000
+Davids-Laptop:~ David$ cd desktop
+Davids-Laptop:desktop David$ mkdir GitHubRepoAssignment
+Davids-Laptop:desktop David$ cd GitHubRepoAssignment
+Davids-Laptop:GitHubRepoAssignment David$ git init
+Initialized empty Git repository in /Users/David/Desktop/GitHubRepoAssignment/.git/
+Davids-Laptop:GitHubRepoAssignment David$ touch readme.md
+Davids-Laptop:GitHubRepoAssignment David$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Davids-Laptop:GitHubRepoAssignment David$ cd ..
+Davids-Laptop:desktop David$ cd GitHubRepoAssignment
+Davids-Laptop:GitHubRepoAssignment David$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Davids-Laptop:GitHubRepoAssignment David$ git add readme.md
+Davids-Laptop:GitHubRepoAssignment David$ git commit -m readme.md
+[master (root-commit) 862a259] readme.md
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 readme.md
+Davids-Laptop:GitHubRepoAssignment David$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+Davids-Laptop:GitHubRepoAssignment David$ git remote add origin https://github.com/binaryfaith/GitHubRepoAssignment.git
+Davids-Laptop:GitHubRepoAssignment David$ git push -u origin master
+Username for 'https://github.com': binaryfaith
+Password for 'https://binaryfaith@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/binaryfaith/GitHubRepoAssignment.git/'
+Davids-Laptop:GitHubRepoAssignment David$ git remote add origin https://github.com/binaryfaith/GitHubRepoAssignment.git
+fatal: remote origin already exists.
+Davids-Laptop:GitHubRepoAssignment David$ push -u origin master
+-bash: push: command not found
+Davids-Laptop:GitHubRepoAssignment David$ binaryfaith
+-bash: binaryfaith: command not found
+Davids-Laptop:GitHubRepoAssignment David$ git push -u origin master
+Username for 'https://github.com': binaryfaith
+Password for 'https://binaryfaith@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 208 bytes | 208.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/binaryfaith/GitHubRepoAssignment.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Davids-Laptop:GitHubRepoAssignment David$ 
+
