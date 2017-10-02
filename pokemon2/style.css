@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1000px;
+    margin: auto;
+}
+#pokemon{
+    display:inline-block;
+    width: 750px;
+    height: 1000px;
+        text-align: -webkit-right;
+}
+#dex{
+    display:inline-block;
+    width: 250px;
+    height: 500px;
+    top: 100px;
+    float: right;
+    vertical-align: top;
+    position: fixed;
+    border: 4px solid red;
+}
